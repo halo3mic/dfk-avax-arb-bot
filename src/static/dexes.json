@@ -1,0 +1,20 @@
+[
+    {
+        "factory": "0x794C07912474351b3134E6D6B3B7b3b4A07cbAAa",
+        "chainID": 53935,
+        "id": "dfk-swap",
+        "fee": "0.003"
+    },
+    {
+        "factory": "0xefa94DE7a4656D787667C749f7E1223D71E9FD88",
+        "chainID": 43114,
+        "id": "pangolin",
+        "fee": "0.003"
+    },
+    {
+        "factory": "0x9Ad6C38BE94206cA50bb0d90783181662f0Cfa10",
+        "chainID": 43114,
+        "id": "joe",
+        "fee": "0.003"
+    }
+]

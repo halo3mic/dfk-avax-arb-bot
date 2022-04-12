@@ -1,0 +1,23 @@
+{
+  "name": "dfk-arb-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bignumber.js": "^9.0.2",
+    "dotenv": "^16.0.0",
+    "ethers": "^5.6.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.4",
+    "mocha": "^9.2.2"
+  }, 
+  "scripts": {
+    "add-pool": "node ./src/tools/pool-adder.js add-single",
+    "add-all-pools": "node ./src/tools/pool-adder.js add-all",
+    "gen-paths": "node ./src/tools/path-gen.js gen-paths -w", 
+    "test": "npx mocha ./src/test/*.spec.js", 
+    "start": "node ./src/index.js"
+  }
+}
