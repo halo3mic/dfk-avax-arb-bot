@@ -1,11 +1,11 @@
 const { ethers, utils, BigNumber } = require('ethers')
 
-const { filterPathsByPools } = require('./utils/instructions')
-const { getAmountOutByReserves, getOptimalAmountForPath } = require('./utils/math')
+const { filterPathsByPools } = require('./instructions')
+const { getAmountOutByReserves, getOptimalAmountForPath } = require('./math')
 
 const MIN_AMOUNT_IN = BigNumber.from('10000000000')
 
-class ArbManager {
+class OppManager {
 
     constructor(reserveMngr, instrMngr) {
         this.reserveMngr = reserveMngr
@@ -78,4 +78,4 @@ class ArbManager {
 
 }
 
-module.exports = { ArbManager }
+module.exports = { OppManager }

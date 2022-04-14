@@ -1,7 +1,7 @@
 const { getAvaxRpcProvider, getDfkRpcProvider } = require('./utils/providers');
 const { InstrManager, getPoolsForPaths } = require('./utils/instructions')
 const { ReserveManager } = require('./utils/reserves')
-const { ArbManager } = require('./arbitrage')
+const { OppManager } = require('./utils/opportunities')
 const { Listener } = require('./listener')
 
 async function main() {
@@ -21,8 +21,8 @@ async function main() {
         instrMngr
     )
     await reserveMngr.setInitialReserves(instrMngr.paths)
-    const arbMngr = new ArbManager(reserveMngr, instrMngr)
-    const intialArbs = await arbMngr.arbsSearch(instrMngr.paths)
+    const oppMngr = new OppManager(reserveMngr, instrMngr)
+    const intialArbs = await oppMngr.arbsSearch(instrMngr.paths)
     console.log('Initial arbitrage opportunities:',  intialArbs)
     const listener = new Listener(providers)
 
@@ -30,12 +30,12 @@ async function main() {
     listener.addTrigger(
         43114, 
         { topics: [ UNISWAP_SYNC_TOPIC ], addresses: activePools }, 
-        arbMngr.reserveUpdateHandler.bind(arbMngr)
+        oppMngr.reserveUpdateHandler.bind(oppMngr)
     )
     listener.addTrigger(
         53935, 
         { topics: [ UNISWAP_SYNC_TOPIC ], addresses: activePools }, 
-        arbMngr.reserveUpdateHandler.bind(arbMngr)
+        oppMngr.reserveUpdateHandler.bind(oppMngr)
     )
     listener.listenForUpdates()
 }
