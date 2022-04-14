@@ -88,10 +88,12 @@ function generatePaths() {
         avax: {
             'WAVAX': '0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7',
             'USDC': '0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e',
+            'WJEWEL': '0x4f60a160d8c2dddaafe16fcc57566db84d674bd6',
         },
         dfk: {
             'WAVAX': '0xb57b60debdb0b8172bb6316a9164bd3c695f133a',
             'USDC': '0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a',
+            'WJEWEL': '0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260',
         }
     }
     const startegyPaths = []
@@ -114,6 +116,11 @@ function generatePaths() {
     startegyPaths[3] = generatePathsForStrategy([
         { tknIn: tkns.avax.USDC, tknOut: tkns.avax.WAVAX },
         { tknIn: tkns.dfk.WAVAX, tknOut: tkns.dfk.USDC },
+    ])
+    // ...
+    startegyPaths[4] = generatePathsForStrategy([
+        { tknIn: tkns.avax.WAVAX, tknOut: tkns.avax.WJEWEL },
+        { tknIn: tkns.dfk.WJEWEL, tknOut: tkns.dfk.WAVAX },
     ])
 
 
