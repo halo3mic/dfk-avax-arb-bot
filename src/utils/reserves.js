@@ -12,12 +12,15 @@ class ReserveManager {
         this.instrMngr = instrMngr
     }
 
-    async setInitialReserves(selectedPaths) {
-        this.reserves = await this.fetchReservesForPaths(selectedPaths)
+    async setInitialReserves(selectedPaths, blockNumbers) {
+        this.reserves = await this.fetchReservesForPaths(
+            selectedPaths, 
+            blockNumbers
+        )
     }
 
-    async fetchReserves(pool, blockNumber) {
-        const reservesRaw = await this.fetchReservesRaw(pool, blockNumber)
+    async fetchReserves(pool, blockNumbers) {
+        const reservesRaw = await this.fetchReservesRaw(pool, blockNumbers)
         return this.formatReservesFromRaw(pool, reservesRaw)  
     }
 
@@ -27,10 +30,18 @@ class ReserveManager {
      * @param {Array} paths
      * @returns {Object}
      */
-     async fetchReservesForPaths(paths, blockNumber) {
+     async fetchReservesForPaths(paths, blockNumbers) {
         return Promise.all(
             getPoolsForPaths(paths).map(async pool => {
-                return [pool, await this.fetchReserves(pool, blockNumber)]
+                let r
+                try {
+                    r = await this.fetchReserves(pool, blockNumbers)
+                } catch (e) {
+                    console.log(e)
+                    r = [0, 0]
+                    console.log(`Failed to fetch reserves for pool ${pool}`)
+                }
+                return [pool, r]
             })
         ).then(Object.fromEntries)
     }
@@ -44,15 +55,9 @@ class ReserveManager {
         return [ normalizeUnits(r0, d0), normalizeUnits(r1, d1) ]
     }
 
-    /**
-     * Fetch reserves for a pool without any formating
-     * @param {String} poolAddress Pool for which the reserves are fetched
-     * @param {Integer} blockNumber Block at which reserves are fetched
-     * @returns {Array}
-     */
-    async fetchReservesRaw(pool, blockNumber) {
-        blockNumber = blockNumber ? `0x${blockNumber.toString(16)}` : 'latest'
+    async fetchReservesRaw(pool, blockNumbers) {
         const { chainID } = this.instrMngr.getPoolInfo(pool)
+        const blockNumber = blockNumbers ? `0x${blockNumbers[chainID].toString(16)}` : 'latest'
         const provider = this.providers[chainID]
         return provider.call({ to: pool, data: '0x0902f1ac' }, blockNumber)
     }
