@@ -35,3 +35,7 @@ module.exports.unnormalizeUnits = (num, dec) => {
         dec
     )
 }
+// sleep
+module.exports.sleep = (ms) => {
+    return new Promise(resolve => setTimeout(resolve, ms))
+}
