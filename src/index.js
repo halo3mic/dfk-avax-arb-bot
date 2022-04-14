@@ -22,7 +22,8 @@ async function main() {
     )
     await reserveMngr.setInitialReserves(instrMngr.paths)
     const arbMngr = new ArbManager(reserveMngr, instrMngr)
-    await arbMngr.arbsSearch(instrMngr.paths)
+    const intialArbs = await arbMngr.arbsSearch(instrMngr.paths)
+    console.log('Initial arbitrage opportunities:',  intialArbs)
     const listener = new Listener(providers)
 
     const activePools = getPoolsForPaths(instrMngr.paths)

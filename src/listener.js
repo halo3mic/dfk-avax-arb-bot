@@ -33,7 +33,11 @@ class Listener {
                         const logs = await provider.getLogs(logFilter)
                         const events = logs.flatMap(log => {
                             if (filter.addresses.includes(log.address)) {
-                                return [{ address: log.address, data: log.data }]
+                                return [{ 
+                                    txhash: log.transactionHash,
+                                    address: log.address, 
+                                    data: log.data 
+                                }]
                             } else {
                                 return []
                             }

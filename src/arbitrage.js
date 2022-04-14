@@ -26,12 +26,13 @@ class ArbManager {
             [...affectedPools]
         )
         // Check for arb opp among changed pools
-        await this.arbsSearch(affectedPaths)
+        const arbs = await this.arbsSearch(affectedPaths)
+        console.log(events.map(e => e.txhash))
+        console.log('arbs:', arbs)
     }
 
     async arbsSearch(paths) {
-        const arbs = paths.map(p => this.checkForArb(p)).filter(_=>_)
-        console.log(arbs)
+        return paths.map(p => this.checkForArb(p)).filter(_=>_)
     }
 
     checkForArb(path) {
