@@ -1,8 +1,9 @@
 const { getAvaxRpcProvider, getDfkRpcProvider } = require('./utils/providers');
 const { InstrManager, getPoolsForPaths } = require('./utils/instructions')
+const { TransactionManager } = require('./utils/transactions') 
+const { OppManager } = require('./utils/opportunities')
 const { ReserveManager } = require('./utils/reserves')
 const { getEnvVar } = require('./utils/utils')
-const { OppManager } = require('./utils/opportunities')
 const { Listener } = require('./listener')
 
 async function main() {
@@ -14,6 +15,7 @@ async function main() {
         [AVAX_CHAIN_ID, getAvaxRpcProvider()],
         [DFK_CHAIN_ID, getDfkRpcProvider()],
     ])
+    const txMngr = new TransactionManager(providers)
     const instrMngr = new InstrManager(
         require('./static/instructions/tokens.json'),
         require('./static/instructions/pools.json'),
@@ -24,7 +26,7 @@ async function main() {
         instrMngr
     )
     await reserveMngr.setInitialReserves(instrMngr.paths)
-    const oppMngr = new OppManager(reserveMngr, instrMngr)
+    const oppMngr = new OppManager(reserveMngr, instrMngr, txMngr)
     const intialArbs = await oppMngr.arbsSearch(instrMngr.paths)
     console.log('Initial arbitrage opportunities:', intialArbs)
     const listener = new Listener(providers)

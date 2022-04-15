@@ -89,6 +89,7 @@ class OppManager {
     }
 
     async handleOpportunity(opp) {
+        console.log(opp)
         const steps = this.getStepsFromOpportunity(opp)
         const res = await this.txMngr.executeOpportunity(steps)
         // TODO: Wait for tx response and send res to logger

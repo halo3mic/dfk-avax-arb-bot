@@ -20,6 +20,7 @@ class TransactionManager {
         this.signers = signers || this.makeSigners(providers)
         this.unirouters = this.makeUniRouters()
         this.yakrouter = this.makeYakRouter()
+        this.locked = false
     }
 
     makeSigners(providers) {
@@ -54,12 +55,21 @@ class TransactionManager {
     }
 
     async executeOpportunity(steps) {
-        steps.forEach(this.safetyCheck)
-        const results = await Promise.all(steps.map(step => {
-            return this.executeStep(step)
-        }))
-        // TODO: parse results? which results to return?
-        return results
+        if (!this.locked) {
+            this.locked = true
+            steps.forEach(s => this.safetyCheck(s))
+            // First estimate-gas to figure out if any of the steps will fail
+            const swaps = await Promise.all(steps.map(step => {
+                return this.populateExecutionStep(step)
+            }))
+            const receipts = await Promise.all(swaps.map(swap => {
+                return swap().then(r => r.wait(2))
+            }))
+            this.loced = false
+            return receipts
+        } else {
+            console.log('Skipping opportunity, the tx-manager is locked')
+        }
     }
 
     // Make checks before execution
@@ -75,13 +85,13 @@ class TransactionManager {
         }
     }
 
-    // Return execution result
-    async executeStep(step) {
+    // Return tx
+    async populateExecutionStep(step) {
         switch (step.chainID) {
             case AVAX_CHAIN_ID:
-                return submitDispatcherTransaction(step)
+                return this.submitYakTransaction(step)
             case DFK_CHAIN_ID:
-                return submitDexRouterTransaction(step)
+                return this.submitDexRouterTransaction(step)
         }
     }
 
@@ -89,15 +99,15 @@ class TransactionManager {
         const routerTimeOffset = 60 // seconds
         const { dexes, amounts, tkns } = step
         const router = this.unirouters[dexes[0]]
-        const res = router.swapExactTokensForTokens(
+        const res = await router.populateTransaction.swapExactTokensForTokens(
             amounts[0], 
             amounts[amounts.length-1],
             tkns, 
             router.signer.address, 
-            getEpochNow() + routerTimeOffset
+            getEpochNow() + routerTimeOffset, 
+            { gasLimit: 300000 }  // TODO: Put into config
         )
-        // TODO: Parse response?
-        return res
+        return () => router.signer.sendTransaction(res) 
     }
 
     async submitYakTransaction(step) {
@@ -108,7 +118,7 @@ class TransactionManager {
         if (!adapters.every(_=>_)) {
             throw new Error('No yakadapter found')
         }
-        const res = this.yakrouter.swapNoSplit(
+        const res = await this.yakrouter.populateTransaction.swapNoSplit(
             [
                 amounts[0],
                 amounts[amounts.length-1],
@@ -116,10 +126,10 @@ class TransactionManager {
                 adapters
             ],
             this.yakrouter.signer.address,
-            0
+            0,
+            { gasLimit: 300000 }  // TODO: Put into config
         )
-        // TODO: Parse response?
-        return res
+        return () => this.yakrouter.signer.sendTransaction(res) 
     }
 
 }
