@@ -1,6 +1,7 @@
 const { ethers, utils, BigNumber } = require('ethers')
 
 const { filterPathsByPools } = require('./instructions')
+const { logOpportunity } = require('./logging')
 const { 
     getOptimalAmountForPath,
     getAmountOutByReserves, 
@@ -12,12 +13,13 @@ const MIN_PROFIT = utils.parseUnits('0.001', 18)
 
 class OppManager {
 
-    constructor(reserveMngr, instrMngr, txMngr) {
+    constructor(reserveMngr, instrMngr, txMngr, execute=false) {
         this.reserveMngr = reserveMngr
         this.instrMngr = instrMngr
         this.txMngr = txMngr
         this.minProfit = MIN_PROFIT
         this.minAmountIn = MIN_AMOUNT_IN
+        this.execute = execute
     }
  
     // event.address - event emitter
@@ -89,11 +91,14 @@ class OppManager {
     }
 
     async handleOpportunity(opp) {
-        console.log(opp)
-        const steps = this.getStepsFromOpportunity(opp)
-        const res = await this.txMngr.executeOpportunity(steps)
-        // TODO: Wait for tx response and send res to logger
-        console.log(res)
+        if (this.execute) {
+            const steps = this.getStepsFromOpportunity(opp)
+            const res = await this.txMngr.executeOpportunity(steps)
+            console.log(res)
+        } else {
+            logOpportunity(opp)
+            console.log(opp)
+        }
     }
 
     getStepsFromOpportunity(opportunity) {
