@@ -1,14 +1,14 @@
-const { solidity } = require('ethereum-waffle');
 const { utils, BigNumber } = require('ethers');
 const { describe, it } = require('mocha');
-const chai = require('chai')
+const { expect } = require('chai')
 
-const { getAvaxRpcProvider, getDfkRpcProvider } = require('../utils/providers');
-const { InstrManager, getPoolsForPaths } = require('../utils/instructions');
-const { ReserveManager } = require('../utils/reserves');
+const { InstrManager, getPoolsForPaths } = require('../../utils/instructions');
+const { ReserveManager } = require('../../utils/reserves');
+const { 
+    getAvaxRpcProvider, 
+    getDfkRpcProvider 
+} = require('../../utils/providers');
 
-chai.use(solidity)
-const { expect } = chai;
 const { parseUnits } = utils;
 
 
@@ -24,9 +24,9 @@ describe('reserves', async () => {
             53935: providerDfk,
         }
         const instrMngr = new InstrManager(
-            require('./dummy-data/tokens.json'),
-            require('./dummy-data/pools.json'),
-            require('./dummy-data/paths.json'),
+            require('../dummy-data/tokens.json'),
+            require('../dummy-data/pools.json'),
+            require('../dummy-data/paths.json'),
         )
         reserveManager = new ReserveManager(providers, instrMngr)
     })
@@ -76,10 +76,11 @@ describe('reserves', async () => {
 
         it('dfk - past', async () => {
             const chainID = 53935
-            const pastBlock = 426157
+            const pastBlock = {}
+            pastBlock[chainID] = 426157
             const pool = reserveManager.instrMngr.pools
                 .find(p => p.chainID === chainID).id
-            const res = await reserveManager.fetchReservesRaw(pool, 426157)
+            const res = await reserveManager.fetchReservesRaw(pool, pastBlock)
             const [r0, r1] = reserveManager.formatReservesFromRaw(pool, res)
             expect(r0).gt(0)
             expect(r1).gt(0)
@@ -87,7 +88,8 @@ describe('reserves', async () => {
 
         it('avax - past', async () => {
             const chainID = 43114
-            const pastBlock = 12931900
+            const pastBlock = {}
+            pastBlock[chainID] = 12931900
             const pool = reserveManager.instrMngr.pools
                 .find(p => p.chainID === chainID).id
             const res = await reserveManager.fetchReservesRaw(pool, pastBlock)
@@ -99,14 +101,14 @@ describe('reserves', async () => {
     })
 
     it('fetchReservesForPaths', async () => {
-        const paths = require('./dummy-data/paths.json')
+        const paths = require('../dummy-data/paths.json')
         const reserves = await reserveManager.fetchReservesForPaths(paths)
         const targetPools = getPoolsForPaths(paths)
         expect(Object.keys(reserves)).to.deep.eq(targetPools)
     })
 
     it('setInitialReserves', async () => {
-        const paths = require('./dummy-data/paths.json')
+        const paths = require('../dummy-data/paths.json')
         await reserveManager.setInitialReserves(paths)
         const targetPools = getPoolsForPaths(paths)
         expect(Object.keys(reserveManager.reserves))

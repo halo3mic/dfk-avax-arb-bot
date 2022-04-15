@@ -3,14 +3,10 @@ const {
     getAmountOutByReserves,
     getAmountsByReserves,
     getAmountOut, 
-} = require('../utils/math.js');
+} = require('../../utils/math.js');
 const { describe, it } = require('mocha');
 const { BigNumber } = require('ethers');
-const { solidity } = require('ethereum-waffle');
-const chai = require('chai')
-
-chai.use(solidity)
-const { expect } = chai;
+const { expect } = require('chai')
 
 describe('uni-math', () => {
 

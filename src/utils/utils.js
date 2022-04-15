@@ -1,11 +1,11 @@
 const { utils } = require('ethers')
 
-module.exports.getEnvVar = (_key) => {
+module.exports.getEnvVar = (_key, _isInt=false) => {
     const envVar = process.env[_key]
     if (!envVar) {
         throw new Error(`Environment variable ${_key} not set`)
     }
-    return envVar
+    return _isInt ? parseInt(envVar) : envVar
 }
 
 /**
@@ -35,6 +35,15 @@ module.exports.unnormalizeUnits = (num, dec) => {
         dec
     )
 }
+
+module.exports.uniqueArray = (arr) => {
+    return arr.filter((item, index) => arr.indexOf(item) === index)
+}
+
+module.exports.getEpochNow = () => {
+    return Math.floor(Date.now() / 1000)
+}
+
 // sleep
 module.exports.sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms))

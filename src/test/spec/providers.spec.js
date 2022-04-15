@@ -1,7 +1,7 @@
 const {
     getAvaxRpcProvider,
     getDfkRpcProvider, 
-} = require('../utils/providers.js');
+} = require('../../utils/providers.js');
 const { describe, it } = require('mocha');
 const { expect } = require('chai');
 

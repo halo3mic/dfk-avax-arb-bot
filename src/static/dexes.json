@@ -1,20 +1,25 @@
 [
     {
         "factory": "0x794C07912474351b3134E6D6B3B7b3b4A07cbAAa",
+        "router": "0x3C351E1afdd1b1BC44e931E12D4E05D6125eaeCa",
         "chainID": 53935,
         "id": "dfk-swap",
-        "fee": "0.003"
+        "fee": 3
     },
     {
+        "yakadapter": "0x3614657EDc3cb90BA420E5f4F61679777e4974E3",
         "factory": "0xefa94DE7a4656D787667C749f7E1223D71E9FD88",
+        "router": "0xE54Ca86531e17Ef3616d22Ca28b0D458b6C89106",
         "chainID": 43114,
         "id": "pangolin",
-        "fee": "0.003"
+        "fee": 3
     },
     {
+        "yakadapter": "0xDB66686Ac8bEA67400CF9E5DD6c8849575B90148",
         "factory": "0x9Ad6C38BE94206cA50bb0d90783181662f0Cfa10",
+        "router": "0x60aE616a2155Ee3d9A68541Ba4544862310933d4",
         "chainID": 43114,
         "id": "joe",
-        "fee": "0.003"
+        "fee": 3
     }
 ]

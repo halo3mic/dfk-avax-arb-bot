@@ -1,16 +1,12 @@
+const { parseUnits } = require('ethers').ethers.utils
+const { describe, it } = require('mocha');
+const { expect } = require('chai')
+
 const { 
     unnormalizeUnits,
     normalizeUnits,
     getEnvVar,
-} = require('../utils/utils');
-const { describe, it } = require('mocha');
-const { BigNumber, utils } = require('ethers');
-const { solidity } = require('ethereum-waffle');
-const chai = require('chai')
-
-chai.use(solidity)
-const { parseUnits } = utils
-const { expect } = chai;
+} = require('../../utils/utils');
 
 describe('utils', () => {
 
@@ -24,6 +20,11 @@ describe('utils', () => {
         it('Valid env var', () => {
             process.env['X'] = 'Y'
             expect(getEnvVar('X')).to.eq('Y')
+        })
+
+        it('Convert to int', () => {
+            process.env['X'] = '111'
+            expect(getEnvVar('X', true)).to.eq(111)
         })
     })
 
@@ -64,8 +65,6 @@ describe('utils', () => {
         })
 
     })
-
-
 
 })
 

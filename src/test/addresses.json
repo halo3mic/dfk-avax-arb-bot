@@ -1,0 +1,16 @@
+{
+    "assets": {
+        "dfk": {
+            "CRYSTAL": "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+            "WJEWEL": "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+            "XJEWEL": "0x77f2656d04e158f915bc22f07b779d94c1dc47ff",
+            "USDC": "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+            "WAVAX": "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        },
+        "avax": {
+            "WJEWEL": "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+            "WAVAX": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+            "USDC": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+        }
+    }
+}

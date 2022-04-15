@@ -3,7 +3,7 @@ const {
     filterPathsByPools,
     getPoolsForPaths,
     InstrManager,
-} = require('../utils/instructions.js')
+} = require('../../utils/instructions.js')
 const { describe, it } = require('mocha');
 const { expect } = require('chai');
 
@@ -14,9 +14,9 @@ describe('instructions', () => {
 
         before(() => {
             instrManager = new InstrManager(
-                require('./dummy-data/tokens.json'),
-                require('./dummy-data/pools.json'),
-                require('./dummy-data/paths.json'),
+                require('../dummy-data/tokens.json'),
+                require('../dummy-data/pools.json'),
+                require('../dummy-data/paths.json'),
             )
         })
 
@@ -24,7 +24,7 @@ describe('instructions', () => {
             const id = '0xee5b69ee1d369aa930d669b8d2fe152f55296a29d'
             const info = instrManager.getPathInfo(id)
             expect(info).to.deep.eq(
-                require('./dummy-data/paths.json').find(p => p.id == id)
+                require('../dummy-data/paths.json').find(p => p.id == id)
             )
         })
 
@@ -32,7 +32,7 @@ describe('instructions', () => {
             const id = '0xee5b69ee1d369aa930d669b8d2fe152f55296a29d'
             const info = instrManager.getPoolInfo(id)
             expect(info).to.deep.eq(
-                require('./dummy-data/pools.json').find(p => p.id == id)
+                require('../dummy-data/pools.json').find(p => p.id == id)
             )
         })
 
@@ -40,7 +40,7 @@ describe('instructions', () => {
             const id = '0xee5b69ee1d369aa930d669b8d2fe152f55296a29d'
             const info = instrManager.getTokenInfo(id)
             expect(info).to.deep.eq(
-                require('./dummy-data/tokens.json').find(p => p.id == id)
+                require('../dummy-data/tokens.json').find(p => p.id == id)
             )
         })
 

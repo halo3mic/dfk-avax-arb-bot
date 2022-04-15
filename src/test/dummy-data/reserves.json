@@ -1,0 +1,82 @@
+{
+  "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C": [
+    {
+      "type": "BigNumber",
+      "hex": "0x10d82a5e3f9bff3a92ec"
+    },
+    {
+      "type": "BigNumber",
+      "hex": "0x011253bea8d81f85a2dd"
+    }
+  ],
+  "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1": [
+    {
+      "type": "BigNumber",
+      "hex": "0x02f78b9dc38736190baa"
+    },
+    {
+      "type": "BigNumber",
+      "hex": "0x30541a778f5f2b4700"
+    }
+  ],
+  "0xf4003f4efbe8691b60249e6afbd307abe7758adb": [
+    {
+      "type": "BigNumber",
+      "hex": "0x9a3dda0e04f146157001"
+    },
+    {
+      "type": "BigNumber",
+      "hex": "0x2e67a4b58ddc028fb27000"
+    }
+  ],
+  "0xcf329b34049033de26e4449aebcb41f1992724d3": [
+    {
+      "type": "BigNumber",
+      "hex": "0x086c8d78c20ea7680573"
+    },
+    {
+      "type": "BigNumber",
+      "hex": "0x01bf59ea0e6ed01e03d3"
+    }
+  ],
+  "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98": [
+    {
+      "type": "BigNumber",
+      "hex": "0x01b0c2003cd4f51a0e9c"
+    },
+    {
+      "type": "BigNumber",
+      "hex": "0x1af07349a13bba5a2f02"
+    }
+  ],
+  "0x48658e69d741024b4686c8f7b236d3f1d291f386": [
+    {
+      "type": "BigNumber",
+      "hex": "0x743763ab604208fc634e"
+    },
+    {
+      "type": "BigNumber",
+      "hex": "0x010f45596f0b06cf97b19c"
+    }
+  ],
+  "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e": [
+    {
+      "type": "BigNumber",
+      "hex": "0x9ed1724947611e4f625b"
+    },
+    {
+      "type": "BigNumber",
+      "hex": "0x17584608c30d2f66defd"
+    }
+  ],
+  "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926": [
+    {
+      "type": "BigNumber",
+      "hex": "0x8dcde1c4c27181d4346a"
+    },
+    {
+      "type": "BigNumber",
+      "hex": "0x063e9026d672d6ce92d212"
+    }
+  ]
+}

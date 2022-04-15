@@ -1,15 +1,23 @@
 const { ethers, utils, BigNumber } = require('ethers')
 
 const { filterPathsByPools } = require('./instructions')
-const { getAmountOutByReserves, getOptimalAmountForPath } = require('./math')
+const { 
+    getOptimalAmountForPath,
+    getAmountOutByReserves, 
+    getAmountsByReserves,
+} = require('./math')
 
-const MIN_AMOUNT_IN = BigNumber.from('10000000000')
+const MIN_AMOUNT_IN = utils.parseUnits('0.1', 18)
+const MIN_PROFIT = utils.parseUnits('0.001', 18)
 
 class OppManager {
 
-    constructor(reserveMngr, instrMngr) {
+    constructor(reserveMngr, instrMngr, txMngr) {
         this.reserveMngr = reserveMngr
         this.instrMngr = instrMngr
+        this.txMngr = txMngr
+        this.minProfit = MIN_PROFIT
+        this.minAmountIn = MIN_AMOUNT_IN
     }
  
     // event.address - event emitter
@@ -32,29 +40,33 @@ class OppManager {
     }
 
     async arbsSearch(paths) {
-        return paths.map(p => this.checkForArb(p)).filter(_=>_)
+        const [ bestOpp ] = paths.map(p => this.checkForArb(p))
+            .filter(_=>_)
+            .sort((a, b) => b.grossProfit - a.grossProfit)
+        if (bestOpp) {
+            this.handleOpportunity(bestOpp)
+        }
     }
 
     checkForArb(path) {
         const reservePath = this.getReservePath(path)
-        // console.log(path.desc)
-        // console.log(reservePath)
-        // console.log(utils.formatUnits(getAmountOutByReserves(utils.parseUnits('1', 'ether'), reservePath)))
-        if (getAmountOutByReserves(MIN_AMOUNT_IN, reservePath).sub(MIN_AMOUNT_IN).gt(0)) {
+        const minProfit = getAmountOutByReserves(this.minAmountIn, reservePath)
+            .sub(this.minAmountIn)
+        if (minProfit.gte(this.minProfit)) {
             // Get optimal-amount-in
             const amountInOptimal = getOptimalAmountForPath(reservePath)
-            console.log(utils.formatUnits(amountInOptimal))
             // Get optimal-amount-out + profit
-            const amountOutOptimal = getAmountOutByReserves(
+            const amounts = getAmountsByReserves(
                 amountInOptimal, 
                 reservePath
             )
+            const amountOutOptimal = amounts[amounts.length-1]
             const grossProfit = amountOutOptimal.sub(amountInOptimal)
             if (grossProfit.gt(0)) {
                 return {
-                    amountIn: amountInOptimal,
                     grossProfit: grossProfit, 
-                    path: path.desc,
+                    amounts: amounts,
+                    path
                 }
             }
         }
@@ -74,6 +86,32 @@ class OppManager {
             }
         }
         return reservePath
+    }
+
+    async handleOpportunity(opp) {
+        const steps = this.getStepsFromOpportunity(opp)
+        const res = await this.txMngr.executeOpportunity(steps)
+        // TODO: Wait for tx response and send res to logger
+        console.log(res)
+    }
+
+    getStepsFromOpportunity(opportunity) {
+        const steps = []
+        const amounts = [ ...opportunity.amounts ]
+        opportunity.path.steps.forEach(step => {
+            const dexes = step.pools.map(pool => {
+                return this.instrMngr.getPoolInfo(pool).dexID
+            })
+            steps.push({
+                amounts: amounts.slice(0, step.tkns.length),
+                chainID: step.chainID,
+                pools: step.pools,
+                tkns: step.tkns,
+                dexes: dexes,
+            })
+            amounts.splice(0, step.tkns.length - 1) // Repeat intermediary amounts
+        })
+        return steps
     }
 
 }
