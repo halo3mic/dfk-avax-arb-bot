@@ -1,7 +1,7 @@
 const { ethers, utils, BigNumber } = require('ethers')
 
 const { filterPathsByPools } = require('./instructions')
-const { logOpportunity } = require('./logging')
+const { logOpportunities } = require('./logging')
 const { 
     getOptimalAmountForPath,
     getAmountOutByReserves, 
@@ -42,11 +42,9 @@ class OppManager {
     }
 
     async arbsSearch(paths) {
-        const [ bestOpp ] = paths.map(p => this.checkForArb(p))
-            .filter(_=>_)
-            .sort((a, b) => b.grossProfit - a.grossProfit)
-        if (bestOpp) {
-            this.handleOpportunity(bestOpp)
+        const opps = paths.map(p => this.checkForArb(p)).filter(_=>_)
+        if (opps.length > 0) {
+            this.handleOpportunities(opps)
         }
     }
 
@@ -90,14 +88,15 @@ class OppManager {
         return reservePath
     }
 
-    async handleOpportunity(opp) {
+    async handleOpportunities(opps) {
         if (this.execute) {
-            const steps = this.getStepsFromOpportunity(opp)
+            const [ bestOpp ] = opps.sort((a, b) => b.grossProfit - a.grossProfit)
+            const steps = this.getStepsFromOpportunity(bestOpp)
             const res = await this.txMngr.executeOpportunity(steps)
             console.log(res)
         } else {
-            logOpportunity(opp)
-            console.log(opp)
+            logOpportunities(opps)
+            console.log(bestOpp)
         }
     }
 
