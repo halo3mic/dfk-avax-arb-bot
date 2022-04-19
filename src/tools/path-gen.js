@@ -52,8 +52,8 @@ function findPaths(
         return circles
 }
 
-function generatePath(p0, p1) {
-    const steps = [p0, p1].map(step => {
+function generatePath(parts) {
+    const steps = parts.map(step => {
         const chainIDs = step.pools.map(pool => getPool(pool).chainID)
         if (!chainIDs.every(chainID => chainID == chainIDs[0])) {
             throw new Error('All pools must be on the same chain')
@@ -71,16 +71,17 @@ function generatePath(p0, p1) {
 }
 
 function generatePathsForStrategy(strategy) {
-    const part0Options = findPaths(pools, strategy[0].tknIn, strategy[0].tknOut)
-    const part1Options = findPaths(pools, strategy[1].tknIn, strategy[1].tknOut)
-    const paths = []
-    part0Options.forEach(part0 => {
-        part1Options.forEach(part1 => {
-            const path = generatePath(part0, part1)
-            paths.push(path)
-        })
-    })
-    return paths
+    const partsPaths = strategy.map(s => findPaths(pools, s.tknIn, s.tknOut))
+
+    function getPaths(partsPath, pointer) {
+        if (pointer == partsPaths.length)
+            return generatePath(partsPath)
+        return partsPaths[pointer]
+            .map(p => getPaths([...partsPath, p], pointer+1))
+            .flat()
+    }
+
+    return getPaths([], 0)
 }
 
 function generatePaths() {
@@ -97,32 +98,79 @@ function generatePaths() {
         }
     }
     const startegyPaths = []
+    /** <<<< USE WAVAX, USDC as intermediary tokens >>> **/
+
     // (WAVAX => [X] => USDC)[avax] & (USDC => [X] => WAVAX)[dfk]
-    startegyPaths[0] = generatePathsForStrategy([
+    startegyPaths.push(generatePathsForStrategy([
         { tknIn: tkns.avax.WAVAX, tknOut: tkns.avax.USDC },
         { tknIn: tkns.dfk.USDC, tknOut: tkns.dfk.WAVAX },
-    ])
+    ]))
     // (WAVAX => [X] => USDC)[dfk] & (USDC => [X] => WAVAX)[avax]
-    startegyPaths[1] = generatePathsForStrategy([
+    startegyPaths.push(generatePathsForStrategy([
         { tknIn: tkns.dfk.WAVAX, tknOut: tkns.dfk.USDC },
         { tknIn: tkns.avax.USDC, tknOut: tkns.avax.WAVAX },
-    ])
+    ]))
     // (USDC => [X] => AVAX)[dfk] & (AVAX => [X] => USDC)[avax]
-    startegyPaths[2] = generatePathsForStrategy([
+    startegyPaths.push(generatePathsForStrategy([
         { tknIn: tkns.dfk.USDC, tknOut: tkns.dfk.WAVAX },
         { tknIn: tkns.avax.WAVAX, tknOut: tkns.avax.USDC },
-    ])
+    ]))
     // (USDC => [X] => AVAX)[avax] & (AVAX => [X] => USDC)[dfk]
-    startegyPaths[3] = generatePathsForStrategy([
+    startegyPaths.push(generatePathsForStrategy([
         { tknIn: tkns.avax.USDC, tknOut: tkns.avax.WAVAX },
         { tknIn: tkns.dfk.WAVAX, tknOut: tkns.dfk.USDC },
-    ])
-    // ...
-    startegyPaths[4] = generatePathsForStrategy([
+    ]))
+
+    /** <<<< USE JEWEL as intermediary tokens >>> **/
+
+    // (WAVAX => JEWEL)[avax] & (WJEWEL => WAVAX)[dfk]
+    startegyPaths.push(generatePathsForStrategy([
         { tknIn: tkns.avax.WAVAX, tknOut: tkns.avax.WJEWEL },
         { tknIn: tkns.dfk.WJEWEL, tknOut: tkns.dfk.WAVAX },
-    ])
+    ]))
+    // (WAVAX => JEWEL)[dfk] & (WJEWEL => WAVAX)[avax]
+    startegyPaths.push(generatePathsForStrategy([
+        { tknIn: tkns.dfk.WAVAX, tknOut: tkns.dfk.WJEWEL },
+        { tknIn: tkns.avax.WJEWEL, tknOut: tkns.avax.WAVAX },
+    ]))
 
+    /** <<<< USE JEWEL as starting token >>> **/
+
+    // (WJEWEL => WAVAX)[avax] & (WAVAX => WJEWEL)[dfk]
+    startegyPaths.push(generatePathsForStrategy([
+        { tknIn: tkns.avax.WJEWEL, tknOut: tkns.avax.WAVAX },
+        { tknIn: tkns.dfk.WAVAX, tknOut: tkns.dfk.WJEWEL },
+    ]))
+    // (WJEWEL => WAVAX)[dfk] & (WAVAX => WJEWEL)[avax]
+    startegyPaths.push(generatePathsForStrategy([
+        { tknIn: tkns.dfk.WJEWEL, tknOut: tkns.dfk.WAVAX },
+        { tknIn: tkns.avax.WAVAX, tknOut: tkns.avax.WJEWEL },
+    ]))
+    // (WJEWEL => USDC)[avax] & (USDC => WJEWEL)[dfk]
+    startegyPaths.push(generatePathsForStrategy([
+        { tknIn: tkns.avax.WJEWEL, tknOut: tkns.avax.USDC },
+        { tknIn: tkns.dfk.USDC, tknOut: tkns.dfk.WJEWEL },
+    ]))
+    // (WJEWEL => WAVAX)[dfk] & (WAVAX => WJEWEL)[avax]
+    startegyPaths.push(generatePathsForStrategy([
+        { tknIn: tkns.dfk.WJEWEL, tknOut: tkns.dfk.USDC },
+        { tknIn: tkns.avax.USDC, tknOut: tkns.avax.WJEWEL },
+    ]))
+
+    // <<<< DFK internal arbs
+
+    // (WJEWEL => WJEWEL)[dfk]
+    startegyPaths.push(generatePathsForStrategy([
+        { tknIn: tkns.dfk.WJEWEL, tknOut: tkns.dfk.WJEWEL },
+    ]))
+    // (WAVAX => WAVAX)[dfk]
+    startegyPaths.push(generatePathsForStrategy([
+        { tknIn: tkns.dfk.WAVAX, tknOut: tkns.dfk.WAVAX },
+    ]))
+    // (USDC => USDC)[dfk]
+    startegyPaths.push(generatePathsForStrategy([
+        { tknIn: tkns.dfk.USDC, tknOut: tkns.dfk.USDC },
+    ]))
 
     return startegyPaths.flat()
 }

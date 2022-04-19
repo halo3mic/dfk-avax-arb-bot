@@ -2950,5 +2950,2593 @@
         ]
       }
     ]
+  },
+  {
+    "id": "0x0c0bb1bc31a33021d7003f3858ec003248b90c2c3",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x7945d2d17123470c859f3a9df250f63d5ab7312da",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x819443567af7b9f6b83694022d3f99e0d853832eb",
+    "desc": "CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386"
+        ],
+        "tkns": [
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xe848deac93ac79a86e8a7131b7717b501406ea6c7",
+    "desc": "CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386"
+        ],
+        "tkns": [
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x67aac191bf3740be48df2c0cc4a895da1e68471c4",
+    "desc": "CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xb5fc67193c2396f4897650d783f93b81218ccec96",
+    "desc": "CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xc275d3f4703e863f59208f87fdf4111df135e028d",
+    "desc": "JEWEL|WAVAX::PANGOLIN::43114 => AVAX|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xa5083339574452e2d688f1b025283bc0924b88bc2",
+    "desc": "JEWEL|WAVAX::PANGOLIN::43114 => CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386"
+        ],
+        "tkns": [
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xff49859128eb1c856a7b355754bbbcf146e8946ff",
+    "desc": "JEWEL|WAVAX::PANGOLIN::43114 => CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xf06e2d7ea1b128556e8ac5484dfcee4e585811e0f",
+    "desc": "JEWEL|WAVAX::JOE::43114 => AVAX|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x085ab931e98607950249ad53a27340785a43a5df5",
+    "desc": "JEWEL|WAVAX::JOE::43114 => CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386"
+        ],
+        "tkns": [
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xac3f497544a9c9ab837f872cc0ffead12758472fd",
+    "desc": "JEWEL|WAVAX::JOE::43114 => CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x0c0bb1bc31a33021d7003f3858ec003248b90c2c3",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x7945d2d17123470c859f3a9df250f63d5ab7312da",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x5f3500a425f0e8568e0c73a4f005163886f2a159c",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xea4e6cbaed611fefbdc90896b32e47a0dfd0bbb93",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x4fc94dcb2b5a424412a55c9d35af8caac4a67988c",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x9c8ad6b7b90e2921166ce74b881a2d87ebb50e79f",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x2939fd5247bee97609f720e07c02e409b336f7f92",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xcd911b8bbf008d6938ff23ad3fc31f1097f34b547",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xc873787acbb90129bc82bbc4a41e88fdf1b2d816a",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x43a6e9264a96c4814054704d60391f5a046e0a2b7",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x6d29aad0bd4b70c5f7d7db349f3ae5c1b30961fda",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x23c941aaa1d305bef471d0846a0b1f5ac7579eb9f",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x870c43b2816488567a65a5b9140b0633b2e8549f0",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x98337fc62aa524512beba6559f46b9671db6833c5",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x1d4b1875a81e60ec84e78ce7c922db7a290eb32b1",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x8a606dbf2ca8a4a8acd94f6ad9bb34c449ab06b3a",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xf8eb47f2374848fbf1e5ceea4a4ca46fbd8706054",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x9c798c313ba49d9c3785c0eaa3ae7d5f412bdef5f",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x032acfa0adcc95fecebb36868a99bd019abbbf000",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x96b4d1d299b73b9b18da0ce546ae158af0f0fca2d",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xacab6aecf21e47487f13f9a0c363d576df76f2571",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xfbc635f19c34ef929dee4b2e292e6d5f3223a4d38",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xa3975a16be97416d11d33d73fe175d645510dd034",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x83d2dd5e3d86900f4d74f2af2dd113d2808e1ecea",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x0d927c42d2fa1a58fb4917990d377ce174e1fd1d1",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x181e7830b8dc17aba0ff3a121f80e8a4cbdd1ec2d",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x220f82a24faa67fdd50016f35a60ab84e2a8ff2b6",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x9b4862d0536901e662903deadfadf73753790f6ae",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x4add2131d3bb111fef969b2865ca8ac3ba489d635",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x9772ccf808689c3abb7e13188e5ba827041fbfc3d",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xdda7b2964f1c8763a83c7415a1446607adcd349f6",
+    "desc": "JEWEL|WAVAX::PANGOLIN::43114 => WAVAX|USDC::JOE::43114 => USDC|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C",
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x5770f14e5aba39f615f95f0b4d0b6ae470233b55d",
+    "desc": "JEWEL|WAVAX::PANGOLIN::43114 => WAVAX|USDC::JOE::43114 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C",
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386"
+        ],
+        "tkns": [
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x6dee019a59f57a70c977ddb25f142087aaf86bfb0",
+    "desc": "JEWEL|WAVAX::PANGOLIN::43114 => WAVAX|USDC::JOE::43114 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C",
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xdb43e2b3cae9ef32c91a41a9641c99ea910594561",
+    "desc": "JEWEL|WAVAX::PANGOLIN::43114 => WAVAX|USDC::PANGOLIN::43114 => USDC|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C",
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x3393cb5f683b982a11082c7e7b29060d70011f17b",
+    "desc": "JEWEL|WAVAX::PANGOLIN::43114 => WAVAX|USDC::PANGOLIN::43114 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C",
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386"
+        ],
+        "tkns": [
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xbd41cf25727c731edc3d70bc72ca18324fb2df67a",
+    "desc": "JEWEL|WAVAX::PANGOLIN::43114 => WAVAX|USDC::PANGOLIN::43114 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C",
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xfa805191412e4a104ba14b0f7ee0c3dc14affe234",
+    "desc": "JEWEL|WAVAX::JOE::43114 => WAVAX|USDC::JOE::43114 => USDC|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1",
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x0c3641bc52e154d03387eb016acab0e0fb66f7fba",
+    "desc": "JEWEL|WAVAX::JOE::43114 => WAVAX|USDC::JOE::43114 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1",
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386"
+        ],
+        "tkns": [
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x51d3bdf84170164820ee0618c03a93a3c1d326287",
+    "desc": "JEWEL|WAVAX::JOE::43114 => WAVAX|USDC::JOE::43114 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1",
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x75df28d0976ce77497c74a152b2917c5668de7027",
+    "desc": "JEWEL|WAVAX::JOE::43114 => WAVAX|USDC::PANGOLIN::43114 => USDC|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1",
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x058e1181abbceeba658775fa1f3b143ae1de6f4a7",
+    "desc": "JEWEL|WAVAX::JOE::43114 => WAVAX|USDC::PANGOLIN::43114 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1",
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386"
+        ],
+        "tkns": [
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xc16d8e196d698b82c120bfe0562f7478b399c332c",
+    "desc": "JEWEL|WAVAX::JOE::43114 => WAVAX|USDC::PANGOLIN::43114 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1",
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665"
+        ],
+        "tkns": [
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+        ]
+      },
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xe05f78737b5f38a1c144d7f878ac1f81aab81792c",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x3fec92a42ba858eb14549bbad7ba1cd916c167b78",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x133263fbb765508390f3a1a128e9a0634810bd982",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x3c3ddf54350d44f843dad4ec6742461bddf188b6e",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xcec990cd162e459c3c97d82d181a7f5e551bdb011",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x84e5fc9accb554629fa27dccdce3f08cbe9b2ea16",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x37a13c4b8c42b18397564771730b587da0a424d1f",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xb4fe229ff687c388f53c142091619e60356c92dc0",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x8dc15974c20622023336a64f10e6be549ff375b79",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xafa715f09f902e6364e55e26af06b95246c10792e",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x7779dbb6122c09823ecc49fe8e11e1ec6f331feb8",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x700222182016817ed6faef4de99307887948ec262",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x6e4e12ff1af5cb3b0bbb79954024ba98f01057c47",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x45d4f00b519c36c49bd9332de2b1fb83720ae9475",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xe3653340734cb36b5e8c003cba0abe029e80fd078",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x398d9d2ee9cc39522d9ea6c47d73bdafacb42983e",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x6c80ecc1acb28f14fc13f9c7f0c7c084ca056011e",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x3078e6046352f6d5aeacb0b3ae52cb1beea80860a",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::JOE::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0xf4003f4efbe8691b60249e6afbd307abe7758adb",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xd2a0498b28ec490034098ae17e178b9de5ae9698d",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::PANGOLIN::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0x9AA76aE9f804E7a70bA3Fb8395D0042079238E9C"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x38677e0c50575679f309e4b3621e73ed91f21c36e",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => WAVAX|USDC::PANGOLIN::43114 => JEWEL|WAVAX::JOE::43114",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      },
+      {
+        "chainID": 43114,
+        "pools": [
+          "0x0e0100ab771e9288e0aa97e11557e6654c3a9665",
+          "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+        ],
+        "tkns": [
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+          "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xe656d5386f081a2d609639cddd368b9e4cb201f28",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x1156a232efa4d2453ce0468c5394160f521c37ad3",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x74bb13866e4c3a2d83cc219cef185e6d9b085c249",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xc650d72461e9c6c645fd7cbae256eaf6e7334d123",
+    "desc": "CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x896ab0f2a96cf9a7bf8f5b91468ee531e11b9fd06",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xeba74ed9e5aad197eca90de79c772285949d063cf",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x32c81f7a74d4ef079c6f13c36edcf1439185a5c6f",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e"
+        ],
+        "tkns": [
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xf5e7595e87b7868b75363a28e411f8a96715d8653",
+    "desc": "AVAX|WJEWEL::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e"
+        ],
+        "tkns": [
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x445d7be16f2352fddec6b84bf82e22589f99dad8e",
+    "desc": "CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xb8ca197c8c8608cdb10ac470519355ab63390e5e9",
+    "desc": "CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+        ],
+        "tkns": [
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x4f83a232b362ae89a92817a5db8f15cb823048de6",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926"
+        ],
+        "tkns": [
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x24dd6818feec902c7f0077dcf2e2d342525a292d3",
+    "desc": "USDC|WJEWEL::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935 => CRYSTAL|USDC::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0xcf329b34049033de26e4449aebcb41f1992724d3",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926"
+        ],
+        "tkns": [
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0xfc3cb55ea9139e7cb60a2b6bfb6e42b86d13ff456",
+    "desc": "CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|WJEWEL::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x48658e69d741024b4686c8f7b236d3f1d291f386",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0x0f5e65e11144f61a811673100e4ead115ffcb65ed",
+    "desc": "CRYSTAL|USDC::DFK-SWAP::53935 => CRYSTAL|AVAX::DFK-SWAP::53935 => AVAX|WJEWEL::DFK-SWAP::53935 => USDC|WJEWEL::DFK-SWAP::53935",
+    "steps": [
+      {
+        "chainID": 53935,
+        "pools": [
+          "0x04dec678825b8dfd2d0d9bd83b538be3fbda2926",
+          "0x9f378f48d0c1328fd0c80d7ae544c6cadb5ba99e",
+          "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98",
+          "0xcf329b34049033de26e4449aebcb41f1992724d3"
+        ],
+        "tkns": [
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a",
+          "0x04b9da42306b023f3572e106b11d82aad9d32ebb",
+          "0xb57b60debdb0b8172bb6316a9164bd3c695f133a",
+          "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+          "0x3ad9dfe640e1a9cc1d9b0948620820d975c3803a"
+        ]
+      }
+    ]
   }
 ]
