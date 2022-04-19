@@ -2,11 +2,11 @@ const { formatUnits } = require('ethers').utils
 const { resolve } = require('path')
 const fs = require('fs')
 
-const { getEpochNow, uniqueArray } = require('./utils')
+const { getEpochNow } = require('./utils')
 
 const OPPS_PATH = resolve(__dirname, '../../logs/logs.json')
 
-function logOpportunities(opps) {
+function logOpportunities(opps, logPath) {
 
     function getLogForOpp(opp) {
         const log = {}
@@ -15,14 +15,13 @@ function logOpportunities(opps) {
         log['path_desc'] = opp.path.desc
         log['path_id'] = opp.path.id
         log['amounts'] = opp.amounts.map(a => formatUnits(a))
-        // log['token_path'] = uniqueArray(opp.path.steps.map(s => s.tkns).flat())
-
         return log
     }
 
-    let logs = fs.existsSync(OPPS_PATH) ? require(OPPS_PATH) : []
+    logPath = logPath || OPPS_PATH
+    let logs = fs.existsSync(logPath) ? require(logPath) : []
     logs = [ ...logs, ...opps.map(getLogForOpp) ]
-    fs.writeFileSync(OPPS_PATH, JSON.stringify(logs, null, 2))
+    fs.writeFileSync(logPath, JSON.stringify(logs, null, 2))
 }
 
 module.exports = {
