@@ -48,3 +48,14 @@ module.exports.getEpochNow = () => {
 module.exports.sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms))
 }
+
+module.exports.tryCatchSleepRepeat = async (promise, ms, maxTries) => {
+    for (let i=0; i < maxTries; i++) {
+        try {
+            return await promise
+        } catch {
+            await module.exports.sleep(ms)
+        }
+    }
+    throw new Error(`tryCatchSleepRepeat: max-tries reached`)
+}

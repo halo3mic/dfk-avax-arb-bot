@@ -1,3 +1,4 @@
+const { tryCatchSleepRepeat } = require('./utils/utils')
 
 class Listener {
 
@@ -30,7 +31,11 @@ class Listener {
                             fromBlock: block, 
                             toBlock: block
                         }
-                        const logs = await provider.getLogs(logFilter)
+                        const logs = await tryCatchSleepRepeat(
+                            provider.getLogs(logFilter), 
+                            50,  // ms of sleep
+                            100  // max-tries
+                        )
                         const events = logs.flatMap(log => {
                             if (filter.addresses.includes(log.address)) {
                                 return [{ 

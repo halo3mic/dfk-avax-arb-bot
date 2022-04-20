@@ -1,8 +1,11 @@
 const { parseUnits } = require('ethers').ethers.utils
 const { describe, it } = require('mocha');
-const { expect } = require('chai')
+const chai = require('chai')
+chai.use(require('chai-as-promised'))
+const { expect } = chai
 
-const { 
+const {
+    tryCatchSleepRepeat,
     unnormalizeUnits,
     normalizeUnits,
     getEnvVar,
@@ -62,6 +65,33 @@ describe('utils', () => {
         it('unnormalize dec 24', () => {
             expect(unnormalizeUnits(parseUnits('20033', 18), 24))
                 .to.eq(parseUnits('20033', 24))
+        })
+
+    })
+
+    describe('tryCatchSleepRepeat', () => {
+
+        it('actually sleeps', async () => {
+            var timeTarget = Date.now() + 100
+            const r = await tryCatchSleepRepeat(
+                new Promise(resolve => {
+                    if (Date.now() > timeTarget) {
+                        throw new Error()
+                    }
+                    return resolve(true)
+                }), 
+                30, // ms sleep
+                4  // tries
+            )
+            expect(r).to.be.true
+        })
+
+        it('max-tries', async () => {
+            await expect(tryCatchSleepRepeat(
+                new Promise(() => { throw new Error() }), 
+                1, // ms sleep
+                5  // tries
+            )).to.be.rejected
         })
 
     })
