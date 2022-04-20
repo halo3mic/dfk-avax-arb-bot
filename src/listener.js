@@ -33,7 +33,7 @@ class Listener {
                         }
                         const logs = await tryCatchSleepRepeat(
                             provider.getLogs(logFilter), 
-                            50,  // ms of sleep
+                            100,  // ms of sleep
                             100  // max-tries
                         )
                         const events = logs.flatMap(log => {
