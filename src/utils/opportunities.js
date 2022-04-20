@@ -89,8 +89,8 @@ class OppManager {
     }
 
     async handleOpportunities(opps) {
+        const [ bestOpp ] = opps.sort((a, b) => b.grossProfit - a.grossProfit)
         if (this.execute) {
-            const [ bestOpp ] = opps.sort((a, b) => b.grossProfit - a.grossProfit)
             const steps = this.getStepsFromOpportunity(bestOpp)
             const res = await this.txMngr.executeOpportunity(steps)
             console.log(res)
