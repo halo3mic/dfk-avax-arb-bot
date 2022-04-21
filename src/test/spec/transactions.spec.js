@@ -138,6 +138,7 @@ describe('transactions', async () => {
                     amounts: amounts,
                 }
                 await txMngr.submitDexRouterTransaction(step)
+                    .then(f => f())
                     .then(r => r.wait())
                 const balEnd = await getERC20Balance(
                     trader, 
@@ -195,6 +196,7 @@ describe('transactions', async () => {
                     tkns,
                 }
                 await txMngr.submitYakTransaction(step)
+                    .then(f => f())
                     .then(r => r.wait())
                 const balEnd = await getERC20Balance(
                     trader, 

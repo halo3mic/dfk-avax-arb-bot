@@ -7,6 +7,7 @@ const { TransactionManager } = require('../../utils/transactions');
 const { getAmountOutByReserves } = require('../../utils/math');
 const { InstrManager } = require('../../utils/instructions');
 const { OppManager } = require('../../utils/opportunities');
+const { InventoryManager } = require('../../utils/inventory');
 const { ReserveManager } = require('../../utils/reserves');
 const { 
     getAvaxRpcProvider, 
@@ -48,7 +49,12 @@ describe('opportunities', async () => {
         // Set intial reserves
         reserveMngr.reserves = getDummyReserves()
         const txMngr = new TransactionManager(providers)
-        oppMngr = new OppManager(reserveMngr, instrMngr, txMngr)
+        const chainToHolders = Object.fromEntries(
+            Object.entries(txMngr.signers).map(([k, v]) => [k, [v.address]])
+        )
+        const inventoryMngr = new InventoryManager(providers, chainToHolders)
+        await inventoryMngr.setInitialBals()
+        oppMngr = new OppManager(reserveMngr, instrMngr, txMngr, inventoryMngr)
         sandbox = sinon.createSandbox()
     })
 
@@ -124,20 +130,43 @@ describe('opportunities', async () => {
 
     describe('checkForArb', async () => {
         
-        it('is accurate', async () => {
+        it.only('is accurate', async () => {
             const rA0 = parseUnits('0.1')
             const rA1 = parseUnits('0.3')
             const rB0 = parseUnits('1')
             const rB1 = parseUnits('2')
+            const path = {
+                "steps": [
+                    {
+                      "chainID": 43114,
+                      "pools": [
+                        "0xE90E8B880Cbe62d3f2958C9280DbC139465BD9A1"
+                      ],
+                      "tkns": [
+                        "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+                        "0x4f60a160d8c2dddaafe16fcc57566db84d674bd6"
+                      ]
+                    },
+                    {
+                      "chainID": 53935,
+                      "pools": [
+                        "0xf3eabed6bd905e0fcd68fc3dbcd6e3a4aee55e98"
+                      ],
+                      "tkns": [
+                        "0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260",
+                        "0xb57b60debdb0b8172bb6316a9164bd3c695f133a"
+                      ]
+                    }
+                  ]
+            }
             sandbox.stub(oppMngr, "getReservePath")
                 .returns([rA0, rA1, rB0, rB1])
-            const path = oppMngr.instrMngr.paths[0]
             const arb = oppMngr.checkForArb(path)
             const amountOut = getAmountOutByReserves(
-                arb.amounts[0], 
+                arb.steps[0].amounts[0], 
                 [rA0, rA1, rB0, rB1]
             )
-            expect(arb.grossProfit).to.equal(amountOut.sub(arb.amounts[0]))
+            expect(arb.grossProfit).to.equal(amountOut.sub(arb.steps[0].amounts[0]))
             expect(arb.path).to.deep.eq(path)
         })
 
@@ -166,12 +195,7 @@ describe('opportunities', async () => {
             parseUnits('0.6'),
         ]
         const path = oppMngr.instrMngr.paths[0]
-        const opportunity = {
-            grossProfit: parseUnits('0.1'),
-            amounts,
-            path, 
-        }
-        const steps = oppMngr.getStepsFromOpportunity(opportunity)
+        const steps = oppMngr.makeSteps(path, amounts)
 
         const step0 = path.steps[0]
         expect(steps[0].chainID).to.eq(43114)
