@@ -9,7 +9,7 @@ const {
 } = require('./math')
 
 const MIN_AMOUNT_IN = utils.parseUnits('0.01', 18)
-const MIN_PROFIT = utils.parseUnits('0', 18)
+const MIN_PROFIT = utils.parseUnits('0.01', 18)
 const THRESHOLDS = {
     '0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260': utils.parseUnits('500', 18),
 }
