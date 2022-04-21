@@ -65,7 +65,7 @@ class TransactionManager {
             const receipts = await Promise.all(swaps.map(swap => {
                 return swap().then(r => r.wait(2))
             }))
-            this.loced = false
+            this.locked = false
             return receipts
         } else {
             console.log('Skipping opportunity, the tx-manager is locked')
