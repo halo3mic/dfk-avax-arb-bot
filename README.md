@@ -18,6 +18,7 @@ yarn start
 #### Start the bot with continious run
 Session will be restarted if error occurs.
 Errors are logged in `./logs/err.log` and all stdout in `./logs/out.log`.
+Note that for this command the `forever` module needs to be installed globally with `yarn add global forever`.
 ```bash
 yarn start-forever
 ```
