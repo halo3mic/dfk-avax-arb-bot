@@ -90,7 +90,7 @@ class OppManager {
             }
             const stepTknCount = steps[i].amounts.length
             const stepAmountOut = steps[i].amounts[stepTknCount-1]
-            const maxAmountOutForTkn = getMaxOutForStep(steps[i])
+            const maxAmountOutForTkn = this.getMaxOutForStep(steps[i])
             if (maxAmountOutForTkn && stepAmountOut.gt(maxAmountOutForTkn)) {
                 console.log('Invalid amounts out')
                 return false
