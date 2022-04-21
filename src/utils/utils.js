@@ -59,3 +59,5 @@ module.exports.tryCatchSleepRepeat = async (promise, ms, maxTries) => {
     }
     throw new Error(`tryCatchSleepRepeat: max-tries reached`)
 }
+
+module.exports.lowerEq = (a, b) => a.toLowerCase() === b.toLowerCase()

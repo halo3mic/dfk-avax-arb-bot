@@ -1,4 +1,5 @@
 const { utils } = require('ethers')
+const { lowerEq } = require('./utils')
 
 class InstrManager {
 
@@ -8,13 +9,13 @@ class InstrManager {
         this.paths = paths
     }
     getPathInfo(id) {
-        return this.paths.find(p => p.id == id)
+        return this.paths.find(p => lowerEq(p.id, id))
     } 
     getPoolInfo(id) {
-        return this.pools.find(p => p.id == id)
+        return this.pools.find(p => lowerEq(p.id, id))
     }
     getTokenInfo(id) {
-        return this.tokens.find(p => p.id == id)
+        return this.tokens.find(p => lowerEq(p.id, id))
     }
 
 }

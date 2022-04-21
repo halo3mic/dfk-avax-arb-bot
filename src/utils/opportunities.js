@@ -8,17 +8,27 @@ const {
     getAmountsByReserves,
 } = require('./math')
 
-const MIN_AMOUNT_IN = utils.parseUnits('0.1', 18)
-const MIN_PROFIT = utils.parseUnits('0.001', 18)
+const MIN_AMOUNT_IN = utils.parseUnits('0.01', 18)
+const MIN_PROFIT = utils.parseUnits('0', 18)
+const THRESHOLDS = {
+    '0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260': utils.parseUnits('500', 18),
+}
 
 class OppManager {
 
-    constructor(reserveMngr, instrMngr, txMngr, execute=false) {
+    constructor(
+        reserveMngr, 
+        instrMngr, 
+        txMngr, 
+        inventoryMngr,
+        execute=false
+    ) {
+        this.inventoryMngr = inventoryMngr
         this.reserveMngr = reserveMngr
         this.instrMngr = instrMngr
         this.txMngr = txMngr
-        this.minProfit = MIN_PROFIT
         this.minAmountIn = MIN_AMOUNT_IN
+        this.minProfit = MIN_PROFIT
         this.execute = execute
     }
  
@@ -36,9 +46,19 @@ class OppManager {
             [...affectedPools]
         )
         // Check for arb opp among changed pools
-        const arbs = await this.arbsSearch(affectedPaths)
-        console.log(events.map(e => e.txhash))
-        console.log('arbs:', arbs)
+        await this.arbsSearch(affectedPaths)
+        console.log(events.map(e => e.txhash))    
+    }
+
+    // Return max-tokenIn-amount for each step
+    getMaxInForPath(path) {
+        return path.steps.map(step => {
+            const [ tknIn ] = step.tkns
+            const { chainID } = this.instrMngr.getTokenInfo(tknIn)
+            const holder = this.txMngr.signers[chainID].address
+            const tknBal = this.inventoryMngr.getTknBalForHolder(holder, tknIn)
+            return tknBal
+        })
     }
 
     async arbsSearch(paths) {
@@ -48,6 +68,24 @@ class OppManager {
         }
     }
 
+    validAmounts(steps, maxAmountsIn) {
+        for (let i=0; i < steps.length; i++) {
+            if (steps[i].amounts[0].gt(maxAmountsIn[i])) {
+                console.log('Invalid amounts in')
+                return false
+            }
+            const stepTknCount = steps[i].amounts.length
+            const stepAmountOut = steps[i].amounts[stepTknCount-1]
+            const stepTknOut = steps[i].tkns[stepTknCount-1]
+            const maxAmountOutForTkn = THRESHOLDS[stepTknOut]
+            if (maxAmountOutForTkn && stepAmountOut.gt(maxAmountOutForTkn)) {
+                console.log('Invalid amounts out')
+                return false
+            }
+        }
+        return true
+    }
+
     checkForArb(path) {
         const reservePath = this.getReservePath(path)
         const minProfit = getAmountOutByReserves(this.minAmountIn, reservePath)
@@ -55,17 +93,28 @@ class OppManager {
         if (minProfit.gte(this.minProfit)) {
             // Get optimal-amount-in
             const amountInOptimal = getOptimalAmountForPath(reservePath)
-            // Get optimal-amount-out + profit
-            const amounts = getAmountsByReserves(
-                amountInOptimal, 
-                reservePath
-            )
-            const amountOutOptimal = amounts[amounts.length-1]
-            const grossProfit = amountOutOptimal.sub(amountInOptimal)
+            const maxAmountsIn = this.getMaxInForPath(path)
+            const amountIn = maxAmountsIn[0].lte(amountInOptimal)
+                ? maxAmountsIn[0]
+                : amountInOptimal
+            if (amountIn.lt(this.minAmountIn)) {
+                return
+            }
+            // Get amounts for trade
+            const amounts = getAmountsByReserves(amountIn, reservePath)
+
+            // Make steps 
+            const steps = this.makeSteps(path, amounts)
+            if (this.execute && !this.validAmounts(steps, maxAmountsIn)) {
+                return
+            }
+            const grossProfit = amounts[amounts.length-1].sub(amountIn)
+            console.log(amounts)
+            console.log(utils.formatUnits(grossProfit))
             if (grossProfit.gt(0)) {
                 return {
                     grossProfit: grossProfit, 
-                    amounts: amounts,
+                    steps, 
                     path
                 }
             }
@@ -91,8 +140,7 @@ class OppManager {
     async handleOpportunities(opps) {
         const [ bestOpp ] = opps.sort((a, b) => b.grossProfit - a.grossProfit)
         if (this.execute) {
-            const steps = this.getStepsFromOpportunity(bestOpp)
-            const res = await this.txMngr.executeOpportunity(steps)
+            const res = await this.txMngr.executeOpportunity(bestOpp.steps)
             console.log(res)
         } else {
             logOpportunities(opps)
@@ -100,10 +148,10 @@ class OppManager {
         }
     }
 
-    getStepsFromOpportunity(opportunity) {
+    makeSteps(path, _amounts) {
         const steps = []
-        const amounts = [ ...opportunity.amounts ]
-        opportunity.path.steps.forEach(step => {
+        const amounts = [ ..._amounts ]
+        path.steps.forEach(step => {
             const dexes = step.pools.map(pool => {
                 return this.instrMngr.getPoolInfo(pool).dexID
             })

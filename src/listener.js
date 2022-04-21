@@ -31,16 +31,18 @@ class Listener {
                             fromBlock: block, 
                             toBlock: block
                         }
+                        // TODO: Join topics and do single call for all triggers
                         const logs = await tryCatchSleepRepeat(
                             provider.getLogs(logFilter), 
-                            100,  // ms of sleep
+                            500,  // ms of sleep
                             100  // max-tries
                         )
                         const events = logs.flatMap(log => {
-                            if (filter.addresses.includes(log.address)) {
+                            if (filter.addresses.includes(log.address.toLowerCase())) {
                                 return [{ 
                                     txhash: log.transactionHash,
-                                    address: log.address, 
+                                    address: log.address,
+                                    topics: log.topics,
                                     data: log.data 
                                 }]
                             } else {

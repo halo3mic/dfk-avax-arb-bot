@@ -47,7 +47,7 @@ class ReserveManager {
     }
 
     formatReservesFromRaw(pool, reservesRaw) {
-        const { tkn0:t1, tkn1:t2 } = this.instrMngr.getPoolInfo(pool)
+        const { tkn0: t1, tkn1: t2 } = this.instrMngr.getPoolInfo(pool)
         const r0 = ethers.BigNumber.from(reservesRaw.substr(0, 66))
         const r1 = ethers.BigNumber.from('0x' + reservesRaw.substr(66, 64))
         const d0 = this.instrMngr.getTokenInfo(t1).decimals
