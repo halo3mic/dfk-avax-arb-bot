@@ -50,7 +50,7 @@ class OppManager {
         console.log(events.map(e => e.txhash))    
     }
 
-    // Return max-tokenIn-amount for each step
+    // Return max-token-amountIn for each step
     getMaxInForPath(path) {
         return path.steps.map(step => {
             const [ tknIn ] = step.tkns
@@ -59,6 +59,20 @@ class OppManager {
             const tknBal = this.inventoryMngr.getTknBalForHolder(holder, tknIn)
             return tknBal
         })
+    }
+
+    // Return max-token-amountOut for a steo
+    getMaxOutForStep(step) {
+        const tknOut = step.tkns[step.tkns.length-1]
+        const { chainID } = this.instrMngr.getTokenInfo(tknOut)
+        const holder = this.txMngr.signers[chainID].address
+        const tknBal = this.inventoryMngr.getTknBalForHolder(holder, tknOut)
+        const maxTknBal = THRESHOLDS[tknOut]
+        if (maxTknBal) {
+            return maxTknBal.gte(tknBal)
+                ? maxTknBal.sub(tknBal)
+                : BigNumber.from(0)
+        }
     }
 
     async arbsSearch(paths) {
@@ -76,8 +90,7 @@ class OppManager {
             }
             const stepTknCount = steps[i].amounts.length
             const stepAmountOut = steps[i].amounts[stepTknCount-1]
-            const stepTknOut = steps[i].tkns[stepTknCount-1]
-            const maxAmountOutForTkn = THRESHOLDS[stepTknOut]
+            const maxAmountOutForTkn = getMaxOutForStep(steps[i])
             if (maxAmountOutForTkn && stepAmountOut.gt(maxAmountOutForTkn)) {
                 console.log('Invalid amounts out')
                 return false
