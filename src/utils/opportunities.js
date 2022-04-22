@@ -11,7 +11,8 @@ const {
 const MIN_AMOUNT_IN = utils.parseUnits('0.01', 18)
 const MIN_PROFIT = utils.parseUnits('0.01', 18)
 const THRESHOLDS = {
-    '0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260': utils.parseUnits('500', 18),
+    '0xccb93dabd71c8dad03fc4ce5559dc3d89f67a260': utils.parseUnits('400', 18),
+    '0x4f60a160d8c2dddaafe16fcc57566db84d674bd6': utils.parseUnits('400', 18),
 }
 
 class OppManager {
